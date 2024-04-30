@@ -1,18 +1,24 @@
-import { useState } from 'react'
-import './index.css'
-import Navbar from './components/Navbar/navbar';
-import Intro from './components/Intro/intro';
-import About from './components/About/about';
+import { useState } from "react";
+import "./index.css";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 
 function App() {
-
   return (
-    <div className="App">
-      <Navbar/>
-      <Intro/>
-      <About/>
+    <div>
+      <Navbar />
+      <Main />
+      <About />
+      <Projects />
+      <Resume />
+      <Contact />
+
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
